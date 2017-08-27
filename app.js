@@ -17,7 +17,6 @@ function ToBuyController(ShoppingListCheckOffService) {
   buyList.addItem = function (itemIndex, name, quantity) {
     ShoppingListCheckOffService.addItem(itemIndex, name, quantity);
   
-    console.log(buyList);
   };
 }
 
@@ -27,7 +26,7 @@ function AlreadyBoughtController(ShoppingListCheckOffService) {
   var boughtList = this;
 
   boughtList.items = ShoppingListCheckOffService.getBoughtItems();
-console.log(boughtList);
+
 }
 
 
